@@ -34,7 +34,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .conteudoPrincipal-cursos-link {
     width: 23%;
     margin: 1%;
@@ -47,4 +46,12 @@
 .conteudoPrincipal-cursos-link:nth-child(4n+1) { 
     /* começa no 0, 0+1=elemento1 +4= elemento5 +4=...*/
     margin-left: 0;
+}
+
+/* PARTE MOBILE */
+.cabecalhoPrincipal .container {
+    flex-direction: column;
+}
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
 }
