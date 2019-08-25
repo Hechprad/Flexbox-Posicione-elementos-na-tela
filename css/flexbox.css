@@ -3,15 +3,13 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .cabecalhoPrincipal-nav {
-    display: flex;
+    display: flex;  /* organiza os elementos filhos em linha */
 }
 .rodapePrincipal-patrocinadores .container {
     display: flex;
     justify-content: space-between;
 }
-
 .rodapePrincipal-patrocinadores-list {
     display: flex;
     align-items: center;
@@ -19,19 +17,34 @@
     width: 70%;
     margin-right: 5%;
 }
-
 .rodapePrincipal-contatoForm {
     width: 25%;
 }
-
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
 }
-
 .rodapePrincipal-navMap-list {
     display: flex;
     /*flex-direction: column; /* muda a direção do flex para vertical */
     /*flex-wrap: wrap; /* quebra os elementos de acordo com a altura '250px' */
     flex-flow: column wrap; /* faz o mesmo que os dois comandos acima */
     height: 250px;
+}
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+/* pega os filhos multiplos de 4 (coluna da direita)*/
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+/* pega os filhos multiplos de 4 +1 coluna da esquerda)*/
+.conteudoPrincipal-cursos-link:nth-child(4n+1) { 
+    /* começa no 0, 0+1=elemento1 +4= elemento5 +4=...*/
+    margin-left: 0;
 }
