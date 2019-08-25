@@ -61,6 +61,9 @@
 }
 .videoSobre-video {
     flex-grow: 1;   /* distribui o espaço vazio de uma flex row ou column */
+    /*flex-shrink:2 faz o vídeo diminuir 2 vezes mais que o 
+    "vantagens do alurinha"*/
+    flex-shrink: 2; /* flex-shrink = 0 não deixa o elemento diminuir */
 }
 
 /* PARTE MOBILE */
@@ -104,5 +107,11 @@ envolver o código em uma media query com tamanho máximo de
         /* modificando a ordem dos itens no cabeçalho */
         order: -1; /* -1 = número mais baixo na ordem dos elementos */
         /* por padrão todos os flex items tem o valor do order = 0 */
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
     }
 }
