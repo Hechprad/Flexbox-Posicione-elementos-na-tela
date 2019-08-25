@@ -85,4 +85,9 @@ envolver o código em media query com tamanho máximo de
     .rodapePrincipal-contatoForm-fieldset {
         justify-content: center;
     }
+    .cabecalhoPrincipal-nav-link-app {
+        /* modificando a ordem dos itens no cabeçalho */
+        order: -1; /* -1 = número mais baixo na ordem dos elementos */
+        /* por padrão todos os flex items tem o valor do order = 0 */
+    }
 }
