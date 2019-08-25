@@ -47,10 +47,25 @@
     /* começa no 0, 0+1=elemento1 +4= elemento5 +4=...*/
     margin-left: 0;
 }
+.videoSobre .container {
+    display: flex;
+}
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;   /* distribui o espaço vazio de uma flex row ou column */
+}
+.videoSobre-sobre-list {
+    flex-grow: 1;   /* distribui o espaço vazio de uma flex row ou column */
+}
+.videoSobre-video {
+    flex-grow: 1;   /* distribui o espaço vazio de uma flex row ou column */
+}
 
 /* PARTE MOBILE */
-/* Para colocar o código para mobio, é necessário
-envolver o código em media query com tamanho máximo de
+/* Para colocar o css respondendo para mobile, é necessário
+envolver o código em uma media query com tamanho máximo de
 768 (tablet)*/
 @media(max-width: 768px) {
     .cabecalhoPrincipal .container {
